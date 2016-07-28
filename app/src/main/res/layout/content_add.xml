@@ -9,13 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.rishabh.ioweu.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context="com.example.rishabh.ioweu.AddActivity"
+    tools:showIn="@layout/activity_add">
 
-    <ListView
-        android:layout_width="match_parent"
+    <AutoCompleteTextView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listview">
-
-    </ListView>
+        android:textColor="#000"
+        android:id="@+id/autocomplete_textview"
+        android:ems="10"
+        android:completionThreshold="1"/>
 </LinearLayout>
